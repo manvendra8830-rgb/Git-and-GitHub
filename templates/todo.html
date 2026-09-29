@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do Item</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Create To-Do Item</h1>
+
+        <form action="/submittodoitem" method="POST">
+
+            <div class="form-group">
+                <label for="itemName">Item Name</label>
+                <input
+                    type="text"
+                    id="itemName"
+                    name="itemName"
+                    placeholder="Enter item name"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="itemDescription">Item Description</label>
+                <textarea
+                    id="itemDescription"
+                    name="itemDescription"
+                    placeholder="Enter item description"
+                    rows="5"
+                    required
+                ></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="itemId">Item ID</label>
+                <input
+                    type="text"
+                    id="itemId"
+                    name="itemId"
+                    placeholder="Enter item ID"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="itemUuid">Item UUID</label>
+                <input
+                    type="text"
+                    id="itemUuid"
+                    name="itemUuid"
+                    placeholder="Enter item UUID"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="itemHash">Item Hash</label>
+                <input
+                    type="text"
+                    id="itemHash"
+                    name="itemHash"
+                    placeholder="Enter item hash"
+                    required
+                >
+            </div>
+
+            <button type="submit">Submit To-Do</button>
+
+        </form>
+    </div>
+
+</body>
+</html>

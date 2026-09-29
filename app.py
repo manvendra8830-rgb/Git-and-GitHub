@@ -9,6 +9,11 @@ def home():
     return render_template("index.html")
 
 
+@app.route("/todo")
+def todo():
+    return render_template("todo.html")
+
+
 @app.route("/api")
 def api():
     try:
