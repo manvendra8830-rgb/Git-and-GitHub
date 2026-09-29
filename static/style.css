@@ -20,12 +20,46 @@ h1 {
     margin-bottom: 20px;
 }
 
-a {
+.links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+a,
+button {
     display: inline-block;
-    margin-top: 20px;
     padding: 10px 20px;
     text-decoration: none;
     background: #222;
     color: white;
+    border: none;
     border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-group {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+textarea {
+    resize: vertical;
 }
